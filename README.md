@@ -20,22 +20,22 @@ Node sequence:
 Field Mapping:
 
 github_issue_ledger table:
-issue_key - Unique idempotency key
-issue url - Clickable link back to the issue
-title - Classification evidence
-category - Triage outcome
-reporeter - basic audit context
-opened at - event timing
-last_seen_at - Redelivery evidence
-route_log_status - internal route log outcome
-route_name - readable routing result
-error_note - failure evidence
+1. issue_key - Unique idempotency key
+2. issue url - Clickable link back to the issue
+3. title - Classification evidence
+4. category - Triage outcome
+5. reporeter - basic audit context
+6. opened at - event timing
+7. last_seen_at - Redelivery evidence
+8. route_log_status - internal route log outcome
+9. route_name - readable routing result
+10. error_note - failure evidence
 
 github_issue_route_log table:
-issue_key - connects route-log entry to one ledger row
-category - preserves deterministic classification result
-route_name - records the selected route label
-recorded_at - records when n9n wrote the route-log entry
+1. issue_key - connects route-log entry to one ledger row
+2. category - preserves deterministic classification result\
+3. route_name - records the selected route label
+4. recorded_at - records when n9n wrote the route-log entry
 
 Classification:
 1. Bug - bugs or errors
