@@ -16,8 +16,9 @@ Node sequence:
 9. Intentional failure: check if the issue has a certain sentence in the title and simulate a failure.
 10. Update route-log: updates the route log on a success
 11. Update route log failed: sets status to failed.
-12. 
+    
 Field Mapping:
+
 github_issue_ledger table:
 issue_key - Unique idempotency key
 issue url - Clickable link back to the issue
@@ -29,7 +30,7 @@ last_seen_at - Redelivery evidence
 route_log_status - internal route log outcome
 route_name - readable routing result
 error_note - failure evidence
------------
+
 github_issue_route_log table:
 issue_key - connects route-log entry to one ledger row
 category - preserves deterministic classification result
